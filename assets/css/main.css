@@ -886,6 +886,28 @@ ol {
   height: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-block: 25px;
+}
+
+.flex-item {
+  li {
+    text-align: left;
+    &::before {
+      content: "• ";
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 450px;
@@ -1036,6 +1058,9 @@ ol {
   padding: 0 300px;
   position: relative;
   z-index: 5;
+  p {
+    text-align: left;
+  }
 }
 
 .section-title h3 {
@@ -2272,6 +2297,15 @@ ol {
   background-color: #86d2ed;
   text-align: center;
   padding: 130px 0;
+  .section-title {
+    h3 {
+      color: white;
+    }
+  }
+  p,
+  li {
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
