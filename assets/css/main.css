@@ -2265,20 +2265,6 @@ ol {
   transform: translateY(-5px);
 }
 
-.features .single-feature i {
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
-  background-color: #86d2ed;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 7px;
-  -webkit-box-shadow: 0px 4px 6px #0000002a;
-  box-shadow: 0px 4px 6px #0000002a;
-  margin-bottom: 30px;
-}
 
 .features .single-feature h3 {
   font-size: 18px;
@@ -2989,4 +2975,11 @@ ol {
 .footer .footer-newsletter .newsletter-form .button .btn:hover {
   color: #86d2ed;
   background-color: #fff;
+}
+
+.feature__image {
+  border-radius: 5px;
+  max-height: 10rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
 }
